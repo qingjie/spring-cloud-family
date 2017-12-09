@@ -1,0 +1,135 @@
+2017-12-07 12:21:43.117  INFO 17865 --- [main] c.h.HomecareConfigClientApplication      : The following profiles are active: dev
+2017-12-07 12:21:43.123  INFO 17865 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f91b517: startup date [Thu Dec 07 12:21:43 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f0f1be
+2017-12-07 12:21:43.346  INFO 17865 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bdbf3d90-40c4-3627-a02c-8636b8cdf7b0
+2017-12-07 12:21:43.371  INFO 17865 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$11d1fd25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-07 12:21:43.491  INFO 17865 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9998 (http)
+2017-12-07 12:21:43.496  INFO 17865 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-07 12:21:43.496  INFO 17865 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-07 12:21:43.536  INFO 17865 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-07 12:21:43.536  INFO 17865 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 413 ms
+2017-12-07 12:21:43.590  INFO 17865 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-07 12:21:43.592  INFO 17865 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-07 12:21:43.592  INFO 17865 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-07 12:21:43.592  INFO 17865 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-07 12:21:43.592  INFO 17865 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-07 12:21:43.720  INFO 17865 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f91b517: startup date [Thu Dec 07 12:21:43 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f0f1be
+2017-12-07 12:21:43.750  INFO 17865 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-07 12:21:43.750  INFO 17865 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-07 12:21:43.767  INFO 17865 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 12:21:43.767  INFO 17865 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 12:21:43.785  INFO 17865 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 12:21:43.899  INFO 17865 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-07 12:21:43.904  INFO 17865 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-12-07 12:21:43.904  INFO 17865 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-12-07 12:21:43.905  INFO 17865 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-12-07 12:21:43.906  INFO 17865 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-12-07 12:21:43.913  INFO 17865 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-12-07 12:21:43.919  INFO 17865 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3f91b517,type=ConfigurationPropertiesRebinder]
+2017-12-07 12:21:44.000  INFO 17865 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9998 (http)
+2017-12-07 12:21:44.003  INFO 17865 --- [main] c.h.HomecareConfigClientApplication      : Started HomecareConfigClientApplication in 1.787 seconds (JVM running for 2.042)
+2017-12-07 12:22:15.094  INFO 17865 --- [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-07 12:22:15.094  INFO 17865 --- [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-07 12:22:15.103  INFO 17865 --- [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2017-12-07 12:27:44.175  INFO 17865 --- [Thread-5] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f91b517: startup date [Thu Dec 07 12:21:43 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f0f1be
+2017-12-07 12:27:44.176  INFO 17865 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-12-07 12:27:44.176  INFO 17865 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-12-07 13:19:10.401  INFO 20641 --- [main] c.h.HomecareConfigClientApplication      : The following profiles are active: dev
+2017-12-07 13:19:10.408  INFO 20641 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5be46f9d: startup date [Thu Dec 07 13:19:10 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f0f1be
+2017-12-07 13:19:10.639  INFO 20641 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bdbf3d90-40c4-3627-a02c-8636b8cdf7b0
+2017-12-07 13:19:10.665  INFO 20641 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$11d1fd25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-07 13:19:10.781  INFO 20641 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9998 (http)
+2017-12-07 13:19:10.785  INFO 20641 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-07 13:19:10.786  INFO 20641 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-07 13:19:10.824  INFO 20641 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-07 13:19:10.824  INFO 20641 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 416 ms
+2017-12-07 13:19:10.877  INFO 20641 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-07 13:19:10.879  INFO 20641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-07 13:19:10.879  INFO 20641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-07 13:19:10.879  INFO 20641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-07 13:19:10.879  INFO 20641 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-07 13:19:11.006  INFO 20641 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5be46f9d: startup date [Thu Dec 07 13:19:10 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f0f1be
+2017-12-07 13:19:11.034  INFO 20641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.homecare.HomecareConfigClientApplication.hi()
+2017-12-07 13:19:11.036  INFO 20641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-07 13:19:11.036  INFO 20641 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-07 13:19:11.051  INFO 20641 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 13:19:11.051  INFO 20641 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 13:19:11.069  INFO 20641 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 13:19:11.174  INFO 20641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-07 13:19:11.179  INFO 20641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-12-07 13:19:11.180  INFO 20641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-12-07 13:19:11.180  INFO 20641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-12-07 13:19:11.181  INFO 20641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-12-07 13:19:11.188  INFO 20641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-12-07 13:19:11.194  INFO 20641 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5be46f9d,type=ConfigurationPropertiesRebinder]
+2017-12-07 13:19:11.272  INFO 20641 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9998 (http)
+2017-12-07 13:19:11.274  INFO 20641 --- [main] c.h.HomecareConfigClientApplication      : Started HomecareConfigClientApplication in 1.707 seconds (JVM running for 1.932)
+2017-12-07 13:19:23.181  INFO 20641 --- [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-07 13:19:23.181  INFO 20641 --- [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-07 13:19:23.189  INFO 20641 --- [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2017-12-07 14:37:19.824  INFO 20641 --- [Thread-5] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5be46f9d: startup date [Thu Dec 07 13:19:10 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@36f0f1be
+2017-12-07 14:37:19.826  INFO 20641 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-12-07 14:37:19.826  INFO 20641 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-12-07 14:58:22.634  INFO 38639 --- [main] c.h.HomecareConfigClientApplication      : The following profiles are active: dev
+2017-12-07 14:58:22.642  INFO 38639 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46731692: startup date [Thu Dec 07 14:58:22 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@309e345f
+2017-12-07 14:58:22.901  INFO 38639 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=500c8159-472b-3c80-a0e1-68df0c883668
+2017-12-07 14:58:22.911  INFO 38639 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-07 14:58:22.937  INFO 38639 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$141227aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-12-07 14:58:23.085  INFO 38639 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9998 (http)
+2017-12-07 14:58:23.090  INFO 38639 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-07 14:58:23.091  INFO 38639 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-07 14:58:23.139  INFO 38639 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-07 14:58:23.139  INFO 38639 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 498 ms
+2017-12-07 14:58:23.196  INFO 38639 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-07 14:58:23.198  INFO 38639 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-07 14:58:23.198  INFO 38639 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-07 14:58:23.198  INFO 38639 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-07 14:58:23.198  INFO 38639 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-07 14:58:23.335  INFO 38639 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46731692: startup date [Thu Dec 07 14:58:22 EST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@309e345f
+2017-12-07 14:58:23.422  INFO 38639 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.homecare.HomecareConfigClientApplication.hi()
+2017-12-07 14:58:23.425  INFO 38639 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-07 14:58:23.425  INFO 38639 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-07 14:58:23.442  INFO 38639 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 14:58:23.442  INFO 38639 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 14:58:23.462  INFO 38639 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-07 14:58:23.634  WARN 38639 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-12-07 14:58:23.634  INFO 38639 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-12-07 14:58:23.636  WARN 38639 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-12-07 14:58:23.636  INFO 38639 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-12-07 14:58:23.644  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2017-12-07 14:58:23.649  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2017-12-07 14:58:23.673  INFO 38639 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-07 14:58:23.677  INFO 38639 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-12-07 14:58:23.678  INFO 38639 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-12-07 14:58:23.679  INFO 38639 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-12-07 14:58:23.680  INFO 38639 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-12-07 14:58:23.686  INFO 38639 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-12-07 14:58:23.691  INFO 38639 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=46731692,type=ConfigurationPropertiesRebinder]
+2017-12-07 14:58:23.815  INFO 38639 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-12-07 14:58:23.817  INFO 38639 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-12-07 14:58:23.822  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2017-12-07 14:58:23.824  INFO 38639 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-12-07 14:58:23.824  INFO 38639 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-12-07 14:58:23.824  INFO 38639 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-12-07 14:58:23.824  INFO 38639 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-12-07 14:58:23.859  INFO 38639 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-12-07 14:58:23.860  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-12-07 14:58:23.860  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-12-07 14:58:23.860  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-12-07 14:58:23.860  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-12-07 14:58:23.860  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-12-07 14:58:23.860  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-12-07 14:58:23.860  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-12-07 14:58:23.863  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-12-07 14:58:23.864  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-12-07 14:58:23.865  INFO 38639 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-12-07 14:58:23.866  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1512676703866 with initial instances count: 6
+2017-12-07 14:58:23.876  INFO 38639 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application homecare-v1-configclient with eureka with status UP
+2017-12-07 14:58:23.876  INFO 38639 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1512676703876, current=UP, previous=STARTING]
+2017-12-07 14:58:23.877  INFO 38639 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOMECARE-V1-CONFIGCLIENT/192.168.10.195:homecare-v1-configclient:9998: registering service...
+2017-12-07 14:58:23.893  INFO 38639 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOMECARE-V1-CONFIGCLIENT/192.168.10.195:homecare-v1-configclient:9998 - registration status: 204
+2017-12-07 14:58:23.909  INFO 38639 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9998 (http)
+2017-12-07 14:58:23.909  INFO 38639 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9998
+2017-12-07 14:58:23.912  INFO 38639 --- [main] c.h.HomecareConfigClientApplication      : Started HomecareConfigClientApplication in 3.205 seconds (JVM running for 3.468)
+2017-12-07 14:59:24.050  INFO 38639 --- [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-07 14:59:24.050  INFO 38639 --- [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-07 14:59:24.059  INFO 38639 --- [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
