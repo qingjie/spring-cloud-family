@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: homecare-v1-gateway
+zuul:
+  routes:
+    api-ribbon:
+      path: /api-ribbon/**
+      serviceId: homecare-v1-ribbon
+    api-core:
+      path: /api-core/**
+      serviceId: homecare-v1-core
